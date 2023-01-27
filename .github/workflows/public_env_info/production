@@ -1,0 +1,15 @@
+API_BASE_URL=/api/
+API_SSR_BASE_URL=http://additional-app-middleware:8181
+
+VSF_PROJECT_KEY=vsf-generic-ent-demo
+VSF_API_URI=https://api.commercetools.com/vsf-generic-ent-demo/graphql
+VSF_API_HOST=https://api.europe-west1.gcp.commercetools.com
+VSF_API_AUTH_HOST=https://auth.europe-west1.gcp.commercetools.com
+VSF_API_CLIENT_ID=FwM55bKS99nv7uIQ2J6hzpFf
+VSF_API_CLIENT_SECRET=Hdn4udyyUPQuX8cx5qv4VDVNlPSVtIyv
+VSF_API_SCOPES=create_anonymous_token:vsf-generic-ent-demo,manage_my_orders:vsf-generic-ent-demo,manage_my_payments:vsf-generic-ent-demo,manage_my_profile:vsf-generic-ent-demo,manage_my_shopping_lists:vsf-generic-ent-demo,view_categories:vsf-generic-ent-demo,view_products:vsf-generic-ent-demo,view_stores:vsf-generic-ent-demo
+
+VSF_SERVER_API_CLIENT_ID=dXjyayt9AwXbz5gc3F_3-qHC
+VSF_SERVER_API_CLIENT_SECRET=FjAHQ29Sznc9wW0DfemkXa0H_MNXTFs2
+VSF_SERVER_API_SCOPES=manage_customers:vsf-generic-ent-demo,manage_products:vsf-generic-ent-demo,view_project_settings:vsf-generic-ent-demo,view_stores:vsf-generic-ent-demo
+VSF_SERVER_API_OPERATIONS=

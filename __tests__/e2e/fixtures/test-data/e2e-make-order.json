@@ -1,0 +1,82 @@
+{
+"Should add product to cart": {
+    "product1": {
+      "category1": "women",
+      "name": "Sweater “Dayton“ Crossley blue"
+    },
+    "product2": {
+      "category2": "women",
+      "name": "Pumps ”Flex” Michael Kors black"
+    },
+    "cartNotifications": {
+      "productAdded": "Product has been added to the cart.",
+      "productDeleted": "Product has been removed from the cart."
+    },
+    "customer": {
+        "address": {
+          "shipping": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "streetName": "Vuestorefront Rd.",
+            "streetNumber": "13/37",
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "US",
+            "postalCode": "90001",
+            "phone": "+12345678910"
+          },
+          "billing": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "streetName": "Vuestorefront Rd.",
+            "streetNumber": "13/37",
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "US",
+            "postalCode": "90001",
+            "phone": "+12345678910"
+          }
+        }
+      }
+  },
+  "Should successfully place an order": {
+    "product1": {
+      "category1": "women",
+      "name": "Sweater “Dayton“ Crossley blue"
+    },
+    "product2": {
+      "category2": "women",
+      "name": "Pumps ”Flex” Michael Kors black"
+    },
+    "cartNotifications": {
+      "productAdded": "Product has been added to the cart.",
+      "productDeleted": "Product has been removed from the cart."
+    },
+    "customer": {
+        "address": {
+          "shipping": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "streetName": "Vuestorefront Rd.",
+            "streetNumber": "13/37",
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "US",
+            "postalCode": "90001",
+            "phone": "+12345678910"
+          },
+          "billing": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "streetName": "Vuestorefront Rd.",
+            "streetNumber": "13/37",
+            "city": "Los Angeles",
+            "state": "California",
+            "country": "US",
+            "postalCode": "90001",
+            "phone": "+12345678910"
+          }
+        }
+      }
+  }
+}

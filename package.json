@@ -1,0 +1,75 @@
+{
+  "name": "@vsf-enterprise/commercetools-theme",
+  "description": "Commercetools Integration for Vue Storefront 2",
+  "author": "Filip Rakowski",
+  "version": "1.10.1",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "concurrently \"nuxt\" \"yarn start:middleware\"",
+    "dev:debug": "node --inspect ../../node_modules/.bin/nuxt dev",
+    "dev:frontend": "nuxt",
+    "build": "nuxt build --modern=client",
+    "build:analyze": "nuxt build -a --modern=client",
+    "start": "nuxt start --modern=client",
+    "start:middleware": "node middleware.js",
+    "test": "jest",
+    "test:e2e": "cypress open --config-file __tests__/e2e/cypress.json",
+    "test:e2e:hl": "cypress run --headless --config-file __tests__/e2e/cypress.json",
+    "test:e2e:generate:report": "yarn -s mochawesome-merge \"__tests__/e2e/report/*.json\" > \"__tests__/e2e/report.json\" && yarn -s marge __tests__/e2e/report.json -o \"__tests__/e2e/report\"",
+    "settings": "node ./scripts/getProjectSettings.js",
+    "stores": "node ./scripts/getStores.js",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@nuxtjs/google-fonts": "1.3.0",
+    "@nuxtjs/i18n": "7.3.0",
+    "@nuxtjs/pwa": "3.3.5",
+    "@storefront-ui/vue": "0.13.6",
+    "@vsf-enterprise/commercetools": "1.10.0",
+    "@vue-storefront/http-cache": "2.7.5",
+    "@vue-storefront/middleware": "2.7.5",
+    "@vue-storefront/nuxt": "2.7.5",
+    "concurrently": "^7.0.0",
+    "cookie-universal-nuxt": "2.2.2",
+    "core-js": "2.6.12",
+    "dotenv": "^16.0.3",
+    "nuxt": "2.15.8",
+    "nuxt-gmaps": "1.2.10",
+    "patch-package": "6.5.0",
+    "postinstall-postinstall": "2.1.0",
+    "vue-lazy-hydration": "2.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.20.5",
+    "@babel/plugin-proposal-private-methods": "7.18.6",
+    "@commercetools/api-request-builder": "5.6.3",
+    "@commercetools/sdk-client": "2.1.2",
+    "@commercetools/sdk-middleware-auth": "6.2.1",
+    "@commercetools/sdk-middleware-http": "6.2.0",
+    "@nuxt/image": "0.7.0",
+    "@nuxt/types": "2.15.8",
+    "@vue/test-utils": "1.3.3",
+    "babel-jest": "24.9.0",
+    "cypress": "8.7.0",
+    "cypress-pipe": "2.0.0",
+    "cypress-tags": "0.3.0",
+    "graphql-tag": "2.12.6",
+    "mochawesome": "6.3.1",
+    "mochawesome-merge": "4.2.2",
+    "mochawesome-report-generator": "5.2.0",
+    "ts-node": "10.9.1",
+    "vue-jest": "4.0.1"
+  },
+  "resolutions": {
+    "vue": "2.6.14",
+    "vue-server-renderer": "2.6.14",
+    "vue-template-compiler": "2.6.14"
+  },
+  "engines": {
+    "node": ">=14 <=16"
+  }
+}

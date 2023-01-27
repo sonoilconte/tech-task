@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "lib": [
+      "ES2019",
+      "ES2020",
+      "DOM"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/i18n",
+      "@nuxt/image",
+      "cypress"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "__tests__/e2e/**/*.ts",
+    "__tests__/e2e/plugins/index.js",
+    "__tests__/e2e/support/index.js"
+  ]
+}

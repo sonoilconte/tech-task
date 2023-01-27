@@ -1,0 +1,20 @@
+{
+    "Should merge cart": {
+      "product1": {
+        "category1": "women",
+        "name": "Sweater “Dayton“ Crossley blue"
+      },
+      "product2": {
+        "category2": "women",
+        "name": "Pumps ”Flex” Michael Kors black"
+      },
+      "cartNotifications": {
+        "productAdded": "Product has been added to the cart.",
+        "productDeleted": "Product has been removed from the cart."
+      },
+      "customer": {
+        "password": "Vu3S70r3fr0n7!"
+      }
+    }
+  }
+  
