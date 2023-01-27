@@ -1,6 +1,7 @@
 <div align="center">
 <img src="https://user-images.githubusercontent.com/1626923/137092657-fb398d20-b592-4661-a1f9-4135db0b61d5.png" height="80px"/>
 </div>
+
 # Vue Storefront Solution Engineer Candidate Assignment
 This repository holds a fresh version of a Vue Storefront application. The goal of this assignment is to prepare a customized demo which could be presented to one of our potential customers. It should leverage Vue Storefront integrations with both commercetools and Storyblok. The **model website (MW)** can be reviewed [here](https://vsf-timberland-e9731d0a.europe-west1.gcp.storefrontcloud.io/). You can go for creating a 1:1 clone of it but feel free to surprise us with your own invention!
 
