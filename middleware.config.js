@@ -33,6 +33,13 @@ module.exports = {
         }
       },
       customQueries: ctCustomQueries
-    }
+    },
+    sb: {
+        location: '@vue-storefront/storyblok/server',
+        configuration: {
+          token: 'rIrr6Ldm3UqGZ4BBMqLngQtt',
+          cacheProvider: 'memory',
+        },
+    },
   }
 };

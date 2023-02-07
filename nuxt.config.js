@@ -213,6 +213,13 @@ export default {
         ]
       ]
       : []),
+    ['@vue-storefront/storyblok/nuxt', {
+        useRawSource: {
+          dev: ['@vue-storefront/storyblok'],
+          prod: ['@vue-storefront/storyblok']
+        },
+        jsBridge: 'https://app.storyblok.com/f/storyblok-v2-latest.js'
+    }],  
     '@nuxtjs/i18n',
     'cookie-universal-nuxt',
     '@nuxt/image',
