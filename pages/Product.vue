@@ -59,6 +59,7 @@
             </div>
           </div>
           <div>
+            <!-- TOP description -->
             <p class='product__description desktop-only'>
               {{ $t(description) }}
             </p>
@@ -121,6 +122,7 @@
               class='product__tabs'
               ref='reviewsContainer'
             >
+                <!-- Description tab -->
               <SfTab :title="$t('Description')">
                 <div class='product__description'>
                   {{ $t('Product description') }}
@@ -272,6 +274,11 @@ export default defineComponent({
       .map(breadcrumb => ({ ...breadcrumb, link: localePath(breadcrumb.link) }))
     );
 
+    const description = product.value?._description || '';
+    console.log('DESCRIPTION', description);
+    const price = productPriceTransform(product);
+    console.log('PRICE', price);
+
     const quantityInCart = computed(() => cartGetters.getItems(cart.value).find(cartItem => cartItem.productId === product.value?._id)?.quantity || 0);
     const selectedStore = computed(() => product.value?.availability?.channels?.results.find(result => result.channel.id === selectedChannel.value));
 
@@ -410,6 +417,7 @@ export default defineComponent({
     useMeta(() => metaTags.value);
 
     return {
+      description,
       addToCart,
       updateFilter,
       configuration,
@@ -480,7 +488,7 @@ export default defineComponent({
           value: 'Germany'
         }
       ],
-      description: 'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
+      description: 'Filler text',
       detailsIsActive: false,
       brand:
         'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',
