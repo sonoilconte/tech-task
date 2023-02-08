@@ -3,9 +3,9 @@
     {
       "name": "Accordion",
       "display_name": "Accordion",
-      "created_at": "2023-02-04T22:43:50.552Z",
-      "updated_at": "2023-02-04T22:43:50.552Z",
-      "id": 27046,
+      "created_at": "2022-01-31T07:23:38.494Z",
+      "updated_at": "2022-01-31T07:23:38.494Z",
+      "id": 2146616,
       "schema": {
         "open": {
           "type": "text",
@@ -39,9 +39,9 @@
     {
       "name": "Alert",
       "display_name": "Alert",
-      "created_at": "2023-02-04T22:43:50.907Z",
-      "updated_at": "2023-02-04T22:43:50.907Z",
-      "id": 27047,
+      "created_at": "2022-01-31T07:23:38.303Z",
+      "updated_at": "2022-01-31T07:23:38.303Z",
+      "id": 2146615,
       "schema": {
         "type": {
           "type": "text",
@@ -68,9 +68,9 @@
     {
       "name": "Banner",
       "display_name": "Banner",
-      "created_at": "2023-02-04T22:43:51.345Z",
-      "updated_at": "2023-02-04T22:43:51.345Z",
-      "id": 27048,
+      "created_at": "2022-01-31T07:23:38.109Z",
+      "updated_at": "2022-01-31T07:23:38.109Z",
+      "id": 2146614,
       "schema": {
         "title": {
           "type": "text",
@@ -113,9 +113,9 @@
     {
       "name": "CallToAction",
       "display_name": "Call To Action",
-      "created_at": "2023-02-04T22:43:51.680Z",
-      "updated_at": "2023-02-04T22:43:51.680Z",
-      "id": 27049,
+      "created_at": "2022-01-31T07:23:37.913Z",
+      "updated_at": "2022-01-31T07:23:37.913Z",
+      "id": 2146613,
       "schema": {
         "title": {
           "type": "text",
@@ -157,9 +157,9 @@
     {
       "name": "Carousel",
       "display_name": "Carousel",
-      "created_at": "2023-02-04T22:43:51.996Z",
-      "updated_at": "2023-02-04T22:43:51.996Z",
-      "id": 27050,
+      "created_at": "2022-01-31T07:23:37.721Z",
+      "updated_at": "2022-01-31T07:23:37.721Z",
+      "id": 2146612,
       "schema": {
         "content": {
           "type": "bloks"
@@ -186,9 +186,9 @@
     {
       "name": "Editorial",
       "display_name": "Editorial",
-      "created_at": "2023-02-04T22:43:52.282Z",
-      "updated_at": "2023-02-04T22:43:52.282Z",
-      "id": 27051,
+      "created_at": "2022-01-31T07:23:37.529Z",
+      "updated_at": "2022-01-31T07:23:37.529Z",
+      "id": 2146611,
       "schema": {
         "content": {
           "type": "markdown"
@@ -207,34 +207,11 @@
       "icon": null
     },
     {
-      "name": "feature",
-      "display_name": null,
-      "created_at": "2023-02-03T23:50:51.460Z",
-      "updated_at": "2023-02-03T23:50:51.460Z",
-      "id": 26835,
-      "schema": {
-        "name": {
-          "type": "text"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "feature",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
       "name": "Footer",
       "display_name": "Footer",
-      "created_at": "2023-02-04T22:43:52.625Z",
-      "updated_at": "2023-02-04T22:43:52.625Z",
-      "id": 27052,
+      "created_at": "2022-01-31T07:23:37.337Z",
+      "updated_at": "2022-01-31T07:23:37.337Z",
+      "id": 2146610,
       "schema": {
         "items": {
           "type": "bloks",
@@ -260,9 +237,9 @@
     {
       "name": "FooterColumn",
       "display_name": "Footer Column",
-      "created_at": "2023-02-04T22:43:52.926Z",
-      "updated_at": "2023-02-04T22:43:52.926Z",
-      "id": 27053,
+      "created_at": "2022-01-31T07:23:37.143Z",
+      "updated_at": "2022-01-31T07:23:37.143Z",
+      "id": 2146609,
       "schema": {
         "label": {
           "type": "text"
@@ -286,9 +263,9 @@
     {
       "name": "Gallery",
       "display_name": "Gallery",
-      "created_at": "2023-02-04T22:43:53.176Z",
-      "updated_at": "2023-02-04T22:43:53.176Z",
-      "id": 27054,
+      "created_at": "2022-01-31T07:23:36.943Z",
+      "updated_at": "2022-01-31T07:23:36.943Z",
+      "id": 2146608,
       "schema": {
         "images": {
           "type": "bloks",
@@ -311,34 +288,11 @@
       "icon": null
     },
     {
-      "name": "grid",
-      "display_name": null,
-      "created_at": "2023-02-03T23:50:51.450Z",
-      "updated_at": "2023-02-03T23:50:51.450Z",
-      "id": 26834,
-      "schema": {
-        "columns": {
-          "type": "bloks"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "grid",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
       "name": "Grid",
       "display_name": "Grid",
-      "created_at": "2023-02-04T22:43:53.431Z",
-      "updated_at": "2023-02-04T22:43:53.431Z",
-      "id": 27055,
+      "created_at": "2022-01-31T07:23:36.753Z",
+      "updated_at": "2022-01-31T07:23:36.753Z",
+      "id": 2146607,
       "schema": {
         "content": {
           "type": "bloks",
@@ -379,9 +333,9 @@
     {
       "name": "Heading",
       "display_name": "Heading",
-      "created_at": "2023-02-04T22:43:53.689Z",
-      "updated_at": "2023-02-04T22:43:53.689Z",
-      "id": 27056,
+      "created_at": "2022-01-31T07:23:36.560Z",
+      "updated_at": "2022-01-31T07:23:36.560Z",
+      "id": 2146606,
       "schema": {
         "title": {
           "type": "text",
@@ -410,9 +364,9 @@
     {
       "name": "Hero",
       "display_name": "Hero",
-      "created_at": "2023-02-04T22:43:53.947Z",
-      "updated_at": "2023-02-04T22:43:53.947Z",
-      "id": 27057,
+      "created_at": "2022-01-31T07:23:36.366Z",
+      "updated_at": "2022-01-31T07:23:36.366Z",
+      "id": 2146605,
       "schema": {
         "items": {
           "type": "bloks",
@@ -438,9 +392,9 @@
     {
       "name": "HeroItem",
       "display_name": "Hero Item",
-      "created_at": "2023-02-04T22:43:54.199Z",
-      "updated_at": "2023-02-04T22:43:54.199Z",
-      "id": 27058,
+      "created_at": "2022-01-31T07:23:36.173Z",
+      "updated_at": "2022-01-31T07:23:36.173Z",
+      "id": 2146604,
       "schema": {
         "title": {
           "type": "text",
@@ -483,9 +437,9 @@
     {
       "name": "Image",
       "display_name": "Image",
-      "created_at": "2023-02-04T22:43:54.459Z",
-      "updated_at": "2023-02-04T22:43:54.459Z",
-      "id": 27059,
+      "created_at": "2022-01-31T07:23:35.968Z",
+      "updated_at": "2022-01-31T07:23:35.968Z",
+      "id": 2146603,
       "schema": {
         "alt": {
           "type": "text"
@@ -509,9 +463,9 @@
     {
       "name": "ItemId",
       "display_name": "Item ID",
-      "created_at": "2023-02-04T22:43:54.723Z",
-      "updated_at": "2023-02-04T22:43:54.723Z",
-      "id": 27060,
+      "created_at": "2022-01-31T07:23:35.775Z",
+      "updated_at": "2022-01-31T07:23:35.775Z",
+      "id": 2146602,
       "schema": {
         "id": {
           "type": "text"
@@ -532,9 +486,9 @@
     {
       "name": "Link",
       "display_name": "Link",
-      "created_at": "2023-02-04T22:43:54.983Z",
-      "updated_at": "2023-02-04T22:43:54.983Z",
-      "id": 27061,
+      "created_at": "2022-01-31T07:23:35.583Z",
+      "updated_at": "2022-01-31T07:23:35.583Z",
+      "id": 2146601,
       "schema": {
         "link": {
           "type": "text"
@@ -561,9 +515,9 @@
     {
       "name": "List",
       "display_name": "List",
-      "created_at": "2023-02-04T22:43:55.233Z",
-      "updated_at": "2023-02-04T22:43:55.233Z",
-      "id": 27062,
+      "created_at": "2022-01-31T07:23:35.391Z",
+      "updated_at": "2022-01-31T07:23:35.391Z",
+      "id": 2146600,
       "schema": {
         "items": {
           "type": "bloks",
@@ -588,9 +542,9 @@
     {
       "name": "ListItem",
       "display_name": "List Item",
-      "created_at": "2023-02-04T22:43:55.484Z",
-      "updated_at": "2023-02-04T22:43:55.484Z",
-      "id": 27063,
+      "created_at": "2022-01-31T07:23:35.195Z",
+      "updated_at": "2022-01-31T07:23:35.195Z",
+      "id": 2146599,
       "schema": {
         "label": {
           "type": "text"
@@ -611,9 +565,9 @@
     {
       "name": "Menu",
       "display_name": "Menu",
-      "created_at": "2023-02-04T22:43:55.747Z",
-      "updated_at": "2023-02-04T22:43:55.747Z",
-      "id": 27064,
+      "created_at": "2022-01-31T07:23:34.997Z",
+      "updated_at": "2022-01-31T07:23:34.997Z",
+      "id": 2146598,
       "schema": {
         "items": {
           "type": "bloks",
@@ -639,9 +593,9 @@
     {
       "name": "MenuItem",
       "display_name": "Menu Item",
-      "created_at": "2023-02-04T22:43:56.000Z",
-      "updated_at": "2023-02-04T22:43:56.000Z",
-      "id": 27065,
+      "created_at": "2022-01-31T07:23:34.803Z",
+      "updated_at": "2022-01-31T07:23:34.803Z",
+      "id": 2146597,
       "schema": {
         "label": {
           "type": "text",
@@ -675,9 +629,9 @@
     {
       "name": "Navigation",
       "display_name": "Navigation",
-      "created_at": "2023-02-04T22:43:56.261Z",
-      "updated_at": "2023-02-04T22:43:56.261Z",
-      "id": 27066,
+      "created_at": "2022-01-31T07:23:34.610Z",
+      "updated_at": "2022-01-31T07:23:34.610Z",
+      "id": 2146596,
       "schema": {
         "items": {
           "type": "bloks",
@@ -700,34 +654,11 @@
       "icon": null
     },
     {
-      "name": "page",
-      "display_name": null,
-      "created_at": "2023-02-03T23:50:51.430Z",
-      "updated_at": "2023-02-03T23:50:51.430Z",
-      "id": 26832,
-      "schema": {
-        "body": {
-          "type": "bloks"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": true,
-      "preview_tmpl": null,
-      "is_nestable": false,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "page",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
       "name": "Page",
       "display_name": "Page",
-      "created_at": "2023-02-04T22:43:56.506Z",
-      "updated_at": "2023-02-04T22:43:56.506Z",
-      "id": 27067,
+      "created_at": "2022-01-31T07:23:34.417Z",
+      "updated_at": "2022-01-31T07:23:34.417Z",
+      "id": 2146595,
       "schema": {
         "content": {
           "type": "bloks"
@@ -748,9 +679,9 @@
     {
       "name": "ProductCard",
       "display_name": "Product Cart",
-      "created_at": "2023-02-04T22:43:56.761Z",
-      "updated_at": "2023-02-04T22:43:56.761Z",
-      "id": 27068,
+      "created_at": "2022-01-31T07:23:34.224Z",
+      "updated_at": "2022-01-31T07:23:34.224Z",
+      "id": 2146594,
       "schema": {
         "title": {
           "type": "text"
@@ -793,9 +724,9 @@
     {
       "name": "ProductSlider",
       "display_name": "Product Slider",
-      "created_at": "2023-02-04T22:43:57.009Z",
-      "updated_at": "2023-02-07T18:59:11.906Z",
-      "id": 27069,
+      "created_at": "2022-01-31T07:23:34.028Z",
+      "updated_at": "2022-01-31T07:23:34.028Z",
+      "id": 2146593,
       "schema": {
         "items": {
           "type": "custom",
@@ -809,33 +740,27 @@
           "options": [
             {
               "name": "endpoint",
-              "value": "https://api.europe-west1.gcp.commercetools.com/vsf-demo-hammer",
-              "_uid": "ffc80636-c2d1-4ec0-86ed-b89932584580"
+              "value": "https://api.europe-west1.gcp.commercetools.com/vsf-ct-dev"
             },
             {
               "name": "clientId",
-              "value": "nrcIF80G6V2lC5rWBseJZqq9",
-              "_uid": "830c7144-2b49-4237-b6e4-a52b2a67dbfc"
+              "value": "PIJ0YpRwOub6KYaS15Pmsvj6"
             },
             {
               "name": "clientSecret",
-              "value": "wz1DHFOQPxC6sRQX1rCFtpr7fgtiARKw",
-              "_uid": "ee5fb3c5-df6e-4a6a-ab74-4b3cbe02d7ff"
+              "value": "RVgk3jZRp3WwiTk92COFlGm2FtNpgzTj"
             },
             {
               "name": "locale",
-              "value": "en",
-              "_uid": "892acc08-c7af-4922-8730-454132f4e320"
+              "value": "en"
             },
             {
               "name": "limit",
-              "value": "10",
-              "_uid": "6b61fcc7-eea1-4cd6-825d-406797d3d8ad"
+              "value": "10"
             },
             {
               "name": "selectOnly",
-              "value": "product",
-              "_uid": "8124a293-bf7a-41f7-ab90-402345ef0643"
+              "value": "product"
             }
           ],
           "field_type": "sb-commercetools"
@@ -856,9 +781,9 @@
     {
       "name": "Social",
       "display_name": "Social",
-      "created_at": "2023-02-04T22:43:57.290Z",
-      "updated_at": "2023-02-04T22:43:57.290Z",
-      "id": 27070,
+      "created_at": "2022-01-31T07:23:33.832Z",
+      "updated_at": "2022-01-31T07:23:33.832Z",
+      "id": 2146592,
       "schema": {
         "icon": {
           "type": "text"
@@ -882,9 +807,9 @@
     {
       "name": "Step",
       "display_name": "Step",
-      "created_at": "2023-02-04T22:43:57.538Z",
-      "updated_at": "2023-02-04T22:43:57.538Z",
-      "id": 27071,
+      "created_at": "2022-01-31T07:23:33.638Z",
+      "updated_at": "2022-01-31T07:23:33.638Z",
+      "id": 2146591,
       "schema": {
         "step": {
           "type": "text"
@@ -905,9 +830,9 @@
     {
       "name": "Steps",
       "display_name": "Steps",
-      "created_at": "2023-02-04T22:43:57.805Z",
-      "updated_at": "2023-02-04T22:43:57.805Z",
-      "id": 27072,
+      "created_at": "2022-01-31T07:23:33.447Z",
+      "updated_at": "2022-01-31T07:23:33.447Z",
+      "id": 2146590,
       "schema": {
         "items": {
           "type": "bloks",
@@ -932,9 +857,9 @@
     {
       "name": "StyleGuide",
       "display_name": "Style Guide",
-      "created_at": "2023-02-04T22:43:58.068Z",
-      "updated_at": "2023-02-04T22:43:58.068Z",
-      "id": 27073,
+      "created_at": "2022-01-31T07:23:33.060Z",
+      "updated_at": "2022-01-31T07:23:33.060Z",
+      "id": 2146588,
       "schema": {
         "color_primary": {
           "type": "text"
@@ -970,9 +895,9 @@
     {
       "name": "Tabs",
       "display_name": "Tabs",
-      "created_at": "2023-02-04T22:43:58.326Z",
-      "updated_at": "2023-02-04T22:43:58.326Z",
-      "id": 27074,
+      "created_at": "2022-01-31T07:23:33.254Z",
+      "updated_at": "2022-01-31T07:23:33.254Z",
+      "id": 2146589,
       "schema": {
         "items": {
           "type": "section",
@@ -992,29 +917,6 @@
       "all_presets": [],
       "preset_id": null,
       "real_name": "Tabs",
-      "component_group_uuid": null,
-      "color": null,
-      "icon": null
-    },
-    {
-      "name": "teaser",
-      "display_name": null,
-      "created_at": "2023-02-03T23:50:51.440Z",
-      "updated_at": "2023-02-03T23:50:51.440Z",
-      "id": 26833,
-      "schema": {
-        "headline": {
-          "type": "text"
-        }
-      },
-      "image": null,
-      "preview_field": null,
-      "is_root": false,
-      "preview_tmpl": null,
-      "is_nestable": true,
-      "all_presets": [],
-      "preset_id": null,
-      "real_name": "teaser",
       "component_group_uuid": null,
       "color": null,
       "icon": null

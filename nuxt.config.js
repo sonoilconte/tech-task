@@ -197,8 +197,8 @@ export default {
       '@vue-storefront/nuxt',
       {
         useRawSource: {
-          dev: ['@vue-storefront/core', '@vsf-enterprise/commercetools'],
-          prod: ['@vue-storefront/core', '@vsf-enterprise/commercetools']
+          dev: ['@vue-storefront/core', '@vsf-enterprise/commercetools', '@vue-storefront/storyblok'],
+          prod: ['@vue-storefront/core', '@vsf-enterprise/commercetools', '@vue-storefront/storyblok']
         }
       }]
   ],
@@ -214,10 +214,6 @@ export default {
       ]
       : []),
     ['@vue-storefront/storyblok/nuxt', {
-        useRawSource: {
-          dev: ['@vue-storefront/storyblok'],
-          prod: ['@vue-storefront/storyblok']
-        },
         jsBridge: 'https://app.storyblok.com/f/storyblok-v2-latest.js'
     }],  
     '@nuxtjs/i18n',
@@ -239,7 +235,8 @@ export default {
   plugins: [
     { src: '~/plugins/withCredentials.js' },
     { src: '~/plugins/filters.ts' },
-    { src: '~/plugins/interceptors.js', mode: 'client' }
+    { src: '~/plugins/interceptors.js', mode: 'client' },
+    { src: '~/plugins/cms.js' }
   ],
   serverMiddleware: [
     '~/serverMiddleware/body-parser.js',

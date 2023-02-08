@@ -10,6 +10,8 @@
       />
     </LazyHydrate>
 
+    <!-- <render-content :content="body" /> -->
+
     <LazyHydrate when-visible>
       <SfBannerGrid :banner-grid="1" class="banner-grid">
         <template v-for="item in mocks.banners" v-slot:[item.slot]>
@@ -124,6 +126,27 @@ import {
 import NewsletterModal from '~/components/NewsletterModal.vue';
 import { useUiState } from '~/composables';
 import ProductCard from '~/components/ProductCard';
+import { useContent } from '@vue-storefront/storyblok';
+import RenderContent from '~/components/cms/RenderContent.vue';
+
+async function getSBData() {
+    const {
+        search, 
+        content
+    } = useContent();
+
+    try {
+        await search({ url: `homepage?cv=${Math.floor(Date.now()/1000)}` })
+    
+        const body = computed(() => content.value.body)
+        console.log('BODY', body)
+        console.log('CONTENT', content);
+        return content;
+    } catch(err) {
+        console.log('err getting data', err);
+        return;
+    }
+};
 
 export default defineComponent({
   name: 'Home',
@@ -131,28 +154,41 @@ export default defineComponent({
     const { app: { i18n } } = useContext();
     const { toggleNewsletterModal } = useUiState();
 
-    const { result, search } = useFacet('home');
-    const { currency } = useCurrency();
+    const { result } = useFacet('home');
+    // const { result, search } = useFacet('home');
+
+    // const { currency } = useCurrency();
     const products = computed(() => facetGetters.getProducts(result.value));
 
-    const fetchProducts = async () => {
-      await search({
-        filters: {},
-        page: 1,
-        itemsPerPage: 12,
-        sort: 'latest',
-        phrase: '',
-        customQuery: { productProjections: 'getFacetProducts' }
-      });
-    };
+    // const { content, search } = useContent('homepage');
+    // const body = computed(() => content.value.body)
 
-    watch(currency, async () => {
-      await fetchProducts();
-    });
+    // console.log('BODY', body)
 
-    onSSR(async () => {
-      await fetchProducts();
-    });
+    getSBData();
+
+    // const fetchProducts = async () => {
+    //   await search({
+    //     filters: {},
+    //     page: 1,
+    //     itemsPerPage: 12,
+    //     sort: 'latest',
+    //     phrase: '',
+    //     customQuery: { productProjections: 'getFacetProducts' }
+    //   });
+    // };
+
+    // watch(currency, async () => {
+    //   await fetchProducts();
+    // });
+
+    // onSSR(async () => {
+    //   await fetchProducts();
+    // });
+
+    // onSSR(async () => {
+    //     search({ url: 'homepage' })
+    // })
 
     const mocks = {
       hero: {
@@ -249,7 +285,7 @@ export default defineComponent({
       products,
       handleNewsletterClick,
       onSubscribe,
-      productPriceTransform
+      productPriceTransform,
     };
   },
   head: {},
@@ -265,7 +301,8 @@ export default defineComponent({
     SfCarousel,
     SfHeading,
     SfHero,
-    SfProductCard
+    SfProductCard,
+    RenderContent
   }
 });
 </script>
