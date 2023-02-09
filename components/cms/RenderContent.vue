@@ -12,6 +12,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Banner from '~/components/cms/Banner.vue'
 import { extractComponents } from '@vue-storefront/storyblok'
 
 interface RenderContent {
@@ -25,6 +26,9 @@ export default Vue.extend({
     content: {
       type: Array,
     },
+  },
+  components: {
+    Banner,
   },
   computed: {
     components(): RenderContent[] {

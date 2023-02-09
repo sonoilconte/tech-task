@@ -165,7 +165,7 @@ export default defineComponent({
 
     // console.log('BODY', body)
 
-    getSBData();
+    // getSBData();
 
     // const fetchProducts = async () => {
     //   await search({

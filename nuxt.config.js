@@ -48,6 +48,11 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push(
         {
+          name: 'homepage',
+          path: '/homepage',
+          component: resolve(__dirname, 'pages/_id.vue')
+        },
+        {
           name: 'home',
           path: '/',
           component: resolve(__dirname, 'pages/Home.vue')
@@ -236,7 +241,6 @@ export default {
     { src: '~/plugins/withCredentials.js' },
     { src: '~/plugins/filters.ts' },
     { src: '~/plugins/interceptors.js', mode: 'client' },
-    { src: '~/plugins/cms.js' }
   ],
   serverMiddleware: [
     '~/serverMiddleware/body-parser.js',
