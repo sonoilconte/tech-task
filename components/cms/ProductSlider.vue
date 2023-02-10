@@ -67,7 +67,10 @@ export default Vue.extend({
     },
   },
   setup({ items: { items } }: { items: { items: any[] } }) {
+
+    console.log({items })
     const ids = items.map((item) => item.id)
+    console.log({ ids });
     const { addItem: addItemToCart, isInCart } = useCart()
     const {
       addItem: addItemToWishlist,
@@ -75,11 +78,14 @@ export default Vue.extend({
       removeItem,
       wishlist,
     } = useWishlist()
+
     const { search, products } = useProduct(ids.join(''))
 
-    const masterProducts = computed(() =>
-      productGetters.getFiltered(products.value, { master: true }),
-    )
+    const masterProducts = computed(() => {
+      return productGetters.getFiltered(products.value, { master: true })
+    })
+
+    console.log({ masterProducts });
 
     const removeItemFromWishlist = (productItem) => {
       const wishlistItems = wishlistGetters.getItems(wishlist.value)
@@ -91,6 +97,7 @@ export default Vue.extend({
 
     onSSR(async () => {
       await search({ ids })
+      console.log({ products });
     })
 
     return {

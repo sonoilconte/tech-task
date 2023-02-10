@@ -252,6 +252,8 @@ export default defineComponent({
     const { search: searchReviews } = useReview('productReviews');
     const { addItem, loading: cartLoading, error: cartError, cart } = useCart();
 
+    console.log({ products });
+
     const { send } = useUiNotification();
     const tabs = {
       description: 1,
@@ -275,9 +277,7 @@ export default defineComponent({
     );
 
     const description = product.value?._description || '';
-    console.log('DESCRIPTION', description);
     const price = productPriceTransform(product);
-    console.log('PRICE', price);
 
     const quantityInCart = computed(() => cartGetters.getItems(cart.value).find(cartItem => cartItem.productId === product.value?._id)?.quantity || 0);
     const selectedStore = computed(() => product.value?.availability?.channels?.results.find(result => result.channel.id === selectedChannel.value));

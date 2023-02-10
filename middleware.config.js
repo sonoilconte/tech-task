@@ -39,7 +39,6 @@ module.exports = {
         configuration: {
           token: process.env.SB_TOKEN,
           cacheProvider: 'memory',
-          region: 'US'
         },
     },
   }

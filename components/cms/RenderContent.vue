@@ -12,7 +12,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import Hero from '~/components/cms/Hero.vue'
+import Heading from '~/components/cms/Heading.vue'
+import ProductSlider from '~/components/cms/ProductSlider.vue'
 import Banner from '~/components/cms/Banner.vue'
+import CallToAction from '~/components/cms/CallToAction.vue'
+import StyleGuide from '~/components/cms/StyleGuide.vue'
+
 import { extractComponents } from '@vue-storefront/storyblok'
 
 interface RenderContent {
@@ -28,7 +34,12 @@ export default Vue.extend({
     },
   },
   components: {
+    Hero, 
+    Heading,
+    ProductSlider,
     Banner,
+    CallToAction,
+    StyleGuide,
   },
   computed: {
     components(): RenderContent[] {
