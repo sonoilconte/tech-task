@@ -44,6 +44,11 @@ export default {
     CartPreview
   },
   middleware: ['checkout'],
+  head() {
+    return {
+      title: "Hammer Menswear",
+    }
+  },
   setup() {
     const { app: { localePath } } = useContext();
     const route = useRoute();

@@ -1,5 +1,6 @@
 <template>
-  <render-content :content="content" />
+  <render-content v-if="locale === 'es'" :content="es" />
+  <render-content v-else :content="en" />
 </template>
 
 <script>
@@ -16,21 +17,52 @@ export default Vue.extend({
   components: {
     RenderContent,
   },
-  setup() {
-    const { search, content } = useContent('homepage');
-    const story = computed(() => content.value);
-    const { body } = story.value;
-    onSSR(async () => {
-      // Tell storyblok we don't want the cached data with cv param 
-      await search({ url: `homepage?cv=${Math.floor(Date.now()/1000)}` })
-    })
-    onMounted(() => {
-      storyblokBridge(story.value)
-    })
-    console.log({ body });
+  head() {
     return {
-      content: body,
+      title: 'Hammer Menswear',
     }
+  },
+  data() {
+    let locale = '';
+    if (process.client) {
+      locale = window.location.pathname.replace('/', '');
+    }
+    return {
+      locale, 
+    }
+  },
+  setup() {
+    
+    // For English content
+    let { search, content } = useContent('enContent');
+    let story = computed(() => content.value);
+    const enBody = story.value.body;
+    
+    // For Spanish content
+    const useEsContent = useContent('esContent');
+    const esSearch = useEsContent.search;
+    const esContent = useEsContent.content;
+    const esStory = computed(() => esContent.value ); 
+    const esBody = esStory.value.body;
+
+    onSSR(async () => {
+      await search({ url: 'homepage', locale: '', cache: false });
+      await esSearch({ url: 'homepage', locale: 'es', cache: false });
+    });
+
+    onMounted(async () => {
+      storyblokBridge(story.value)
+    });
+
+    console.log({ 
+      enBody,
+      esBody, 
+    });
+
+    return {
+      en: enBody,
+      es: esBody,
+    };
   }
 });
 </script>

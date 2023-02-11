@@ -219,6 +219,11 @@ import ProductCard from '~/components/ProductCard';
 export default defineComponent({
   name: 'Category',
   transition: 'fade',
+  head() {
+    return {
+      title: "Hammer Menswear",
+    }
+  },
   setup() {
     const {
       $vsf: {

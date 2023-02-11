@@ -234,6 +234,11 @@ const ErrorPage = () => import('~/layouts/error.vue');
 export default defineComponent({
   name: 'Product',
   transition: 'fade',
+  head() {
+    return {
+      title: "Hammer Menswear",
+    }
+  },
   setup() {
     const {
       app: {

@@ -1,0 +1,15 @@
+:root {
+  @include generate-color-variants(--_c-mid-dark-primary, #5dacbd);
+  @include assign-color-variants(--c-primary, --_c-mid-dark-primary);
+  @include assign-color-variants(--c-primary-variant, --_c-mid-dark-secondary); 
+
+  @include generate-color-variants(--_c-dark-bg-primary, #283739);
+  @include assign-color-variants(--_c-dark-primary, --_c-dark-bg-primary);
+  @include assign-color-variants(--_c-dark-primary-variant, --_c-dark-bg-secondary);
+
+  --font-family--primary: "Montserrat", sans-serif;
+  --font-family--secondary: "Montserrat", sans-serif;
+
+  --banner-title-color: #ffffff;
+
+}

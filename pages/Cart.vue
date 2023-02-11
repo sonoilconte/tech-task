@@ -68,6 +68,11 @@ export default {
     SfLoader,
     SfButton
   },
+  head() {
+    return {
+      title: "Hammer Menswear",
+    }
+  },
   setup() {
     const { cart } = useCart();
     const { loading } = useUser();

@@ -12,7 +12,7 @@
       <template #logo>
         <nuxt-link :to="localePath('/')" class="sf-header__logo">
           <nuxt-img
-            :src="'/icons/logo.svg' | addBasePathFilter"
+            :src="'/icons/logo.png' | addBasePathFilter"
             alt="Vue Storefront Next"
             :width="32"
             :height="32"

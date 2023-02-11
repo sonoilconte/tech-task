@@ -68,9 +68,9 @@ export default Vue.extend({
   },
   setup({ items: { items } }: { items: { items: any[] } }) {
 
-    console.log({items })
+    // console.log({items })
     const ids = items.map((item) => item.id)
-    console.log({ ids });
+    // console.log({ ids });
     const { addItem: addItemToCart, isInCart } = useCart()
     const {
       addItem: addItemToWishlist,
@@ -85,7 +85,7 @@ export default Vue.extend({
       return productGetters.getFiltered(products.value, { master: true })
     })
 
-    console.log({ masterProducts });
+    // console.log({ masterProducts });
 
     const removeItemFromWishlist = (productItem) => {
       const wishlistItems = wishlistGetters.getItems(wishlist.value)
@@ -112,3 +112,9 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss">
+  .sf-carousel {
+    margin-top: 15px;
+  }
+</style>

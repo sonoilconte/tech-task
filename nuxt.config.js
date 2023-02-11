@@ -23,7 +23,7 @@ export default {
     host: process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost'
   },
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Hammer Menswear',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -37,7 +37,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
+        href: 'icons/favicon.ico'
       }
     ],
     script: []
@@ -48,14 +48,14 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push(
         {
-          name: 'homepage',
-          path: '/homepage',
+          name: 'home',
+          path: '/',
           component: resolve(__dirname, 'pages/_id.vue')
         },
         {
-          name: 'home',
-          path: '/',
-          component: resolve(__dirname, 'pages/Home.vue')
+          name: 'homepage',
+          path: '/homepage',
+          component: resolve(__dirname, 'pages/_id.vue')
         },
         {
           name: 'product',
@@ -253,7 +253,8 @@ export default {
     scss: [
       require.resolve('@storefront-ui/shared/styles/_helpers.scss', {
         paths: [process.cwd()]
-      })
+      }),
+      '~/assets/customization.scss'
     ]
   },
   build: {

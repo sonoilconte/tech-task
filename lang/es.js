@@ -1,7 +1,6 @@
 /* eslint-disable  */
 
 export default {
-  'store-name': "Hammer's store (es)",  
   Categories: "Categorías",
   Filters: 'Filtros',
   'Sort by': 'Sort by',
