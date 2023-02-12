@@ -28,7 +28,7 @@ export default {
   'Add to compare': 'Add to compare',
   'Match it with': 'Match it with',
   'Share your look': 'Share your look',
-  'Product description': `The Karissa V-Neck Tee features a semi-fitted shape that's flattering for every figure. You can hit the gym with confidence while it hugs curves and hides common "problem" areas. Find stunning women's cocktail dresses and party dresses.`,
+  'Product description': `Un jean de pernera recta de cinco bolsillos siempre te servirá, especialmente cuando está hecho de mezclilla supremamente cómoda como esta aquí. El par viene en un lavado medio que se desvaneció en todos los lugares correctos, por lo que se ve roto sin ningún esfuerzo.`,
   Brand: 'Brand',
   Instruction1: 'Take care of me',
   Instruction2: 'Just here for the care instructions?',

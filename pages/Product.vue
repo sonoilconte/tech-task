@@ -168,17 +168,17 @@
         </div>
       </div>
 
-      <LazyHydrate when-visible>
+      <!-- <LazyHydrate when-visible>
         <RelatedProducts
           :products='relatedProducts'
           :loading='productLoading'
           :title="$t('Match it with')"
         />
-      </LazyHydrate>
+      </LazyHydrate> -->
 
-      <LazyHydrate when-visible>
+      <!-- <LazyHydrate when-visible>
         <InstagramFeed />
-      </LazyHydrate>
+      </LazyHydrate> -->
     </template>
   </div>
 </template>
@@ -493,7 +493,7 @@ export default defineComponent({
           value: 'Germany'
         }
       ],
-      description: 'Filler text',
+      description: 'Hammer Menswear is all about feeling fashionable in your clothing and comfortable in your own skin.',
       detailsIsActive: false,
       brand:
         'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',

@@ -146,6 +146,9 @@ export default {
         const shippingMethodsResponse = await $ct.api.getShippingMethods(
           cart.value.id
         );
+
+        console.log({shippingMethodsResponse});
+
         return shippingMethodsResponse.data;
       } catch (err) {
         error.loadMethods = err;
