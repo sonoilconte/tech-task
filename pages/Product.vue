@@ -257,8 +257,6 @@ export default defineComponent({
     const { search: searchReviews } = useReview('productReviews');
     const { addItem, loading: cartLoading, error: cartError, cart } = useCart();
 
-    console.log({ products });
-
     const { send } = useUiNotification();
     const tabs = {
       description: 1,

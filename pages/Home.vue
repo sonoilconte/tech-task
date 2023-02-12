@@ -139,8 +139,6 @@ async function getSBData() {
         await search({ url: `homepage?cv=${Math.floor(Date.now()/1000)}` })
     
         const body = computed(() => content.value.body)
-        console.log('BODY', body)
-        console.log('CONTENT', content);
         return content;
     } catch(err) {
         console.log('err getting data', err);
@@ -162,8 +160,6 @@ export default defineComponent({
 
     // const { content, search } = useContent('homepage');
     // const body = computed(() => content.value.body)
-
-    // console.log('BODY', body)
 
     // getSBData();
 
