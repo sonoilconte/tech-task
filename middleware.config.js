@@ -28,8 +28,8 @@ module.exports = {
         currency: 'USD',
         country: 'US',
         languageMap: {
-          en: ['en', 'de'],
-          de: ['de', 'en']
+          'en-US': ['en-US', 'es-ES'],
+          'es-ES': ['es-ES', 'en-US']
         }
       },
       customQueries: ctCustomQueries

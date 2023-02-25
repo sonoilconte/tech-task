@@ -1,5 +1,6 @@
 import webpack from 'webpack';
-import defaultI18nSettings from './scripts/defaultI18nSettings';
+import customI18nSettings from './scripts/customI18nSettings';
+// import defaultI18nSettings from './scripts/defaultI18nSettings';
 
 // Client side middleware url
 const middlewareUrl = process.env.NODE_ENV === 'production'
@@ -239,7 +240,7 @@ export default {
       path: '/healthz', handler: '~/serverMiddleware/healthCheck.js'
     }
   ],
-  i18n: defaultI18nSettings,
+  i18n: customI18nSettings,
   styleResources: {
     scss: [
       require.resolve('@storefront-ui/shared/styles/_helpers.scss', {
