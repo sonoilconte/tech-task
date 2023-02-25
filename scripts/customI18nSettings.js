@@ -2,34 +2,33 @@ module.exports = {
   currency: 'USD',
   country: 'US',
   countries: [
-    { name: 'US', label: 'United States', states: ['California', 'Nevada'] },
-    { name: 'AT', label: 'Austria' },
-    { name: 'DE', label: 'Germany' },
-    { name: 'NL', label: 'Netherlands' }
+    { name: 'US', label: 'United States' },
+    { name: 'ES', label: 'Spain' },
   ],
+  // iso here must match currency icon file name in /static/icons/langs, e.g. iso: 'en' -> en.webp
   currencies: [
-    { name: 'EUR', label: 'Euro', iso: 'de' },
-    { name: 'USD', label: 'Dollar', iso: 'en' }
+    { name: 'USD', label: 'Dollar', iso: 'en' },
+    { name: 'EUR', label: 'Euro', iso: 'es' },
   ],
-  // Locale code MUST match languages in commercetools exactly
-  // file should match file in /lang
+  // Locale code must match languages in commercetools exactly
+  // file should match file in /lang, e.g. en.js
+  // Locale code must match icon file name in /static/icons/langs, e.g. code: 'en-US' -> en-US.webp 
   locales: [
-    { code: 'en-US', label: 'English (US)', file: 'en.js', iso: 'en' }, // I don't this iso is doing anything for my purposes
-    { code: 'es-ES', label: 'Español (España)', file: 'es.js', iso: 'es' }
+    { code: 'en-US', label: 'English', file: 'en.js', iso: 'en' }, // I don't this iso here is doing anything for my purposes
+    { code: 'es-ES', label: 'Español', file: 'es.js', iso: 'es' },
   ],
-  defaultLocale: 'en',
+  defaultLocale: 'en-US',
   lazy: true,
   langDir: 'lang/',
-  // currency config
   vueI18n: {
-    fallbackLocale: 'en',
+    fallbackLocale: 'en-US',
     numberFormats: {
       en: {
         currency: {
           style: 'currency', currency: 'USD', currencyDisplay: 'symbol'
         }
       },
-      de: {
+      es: {
         currency: {
           style: 'currency', currency: 'EUR', currencyDisplay: 'symbol'
         }

@@ -227,6 +227,7 @@ export default {
         persist: true
       });
     const changeSelectedCurrency = async (currency) => {
+        console.log({ currency })
       if (isCurrencyChangeAvailable.value) {
         if (cart?.value) {
           await clear();
