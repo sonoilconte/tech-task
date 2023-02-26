@@ -24,3 +24,15 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss">
+
+    .sf-heading {
+    margin-top: 30px;
+    }
+
+    .sf-heading__title {
+    font-size: 1.5em;
+    }
+
+</style>

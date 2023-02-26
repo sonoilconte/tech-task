@@ -16,12 +16,16 @@ export default Vue.extend({
     components: {
         RenderContent,
     },
+    head() {
+        return {
+            title: 'Hammer Menswear',
+        };
+    },
     data() {
         let locale = 'en-us';
         if (process.client) {
             locale = window.location.pathname.replace('/', '').toLowerCase();
         }
-        console.log({ locale });
         return {
             locale,
         }

@@ -53,3 +53,15 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss">
+
+    .sf-banner {
+        margin-top: 30px;
+    }
+
+    .sf-banner__subtitle, .sf-banner__description {
+        color: #ffffff;
+    } 
+
+</style>

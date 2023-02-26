@@ -40,3 +40,11 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss">
+
+    .sf-call-to-action {
+        margin-top: 50px;
+    }
+
+</style>

@@ -166,7 +166,7 @@
         </div>
       </div>
 
-      <LazyHydrate when-visible>
+      <!-- <LazyHydrate when-visible>
         <RelatedProducts
           :products='relatedProducts'
           :loading='productLoading'
@@ -176,7 +176,7 @@
 
       <LazyHydrate when-visible>
         <InstagramFeed />
-      </LazyHydrate>
+      </LazyHydrate> -->
     </template>
   </div>
 </template>
@@ -382,22 +382,22 @@ export default defineComponent({
     };
 
     const metaTags = computed(() => ({
-      title: `${productGetters.getName(product.value)} | Vue Storefront Demo`,
+      title: `${productGetters.getName(product.value)} | Hammer Menswear`,
       meta: [
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${productGetters.getName(product.value)} | Vue Storefront Demo`
+          content: `${productGetters.getName(product.value)} | Hammer Menswear`
         },
         {
           hid: 'description',
           name: 'description',
-          content: `${product.value?._original?.masterData?.current?.metaDescription || ''} | Vue Storefront Demo`
+          content: `${product.value?._original?.masterData?.current?.metaDescription || ''} | Hammer Menswear`
         },
         {
           hid: 'og:description',
           name: 'og:description',
-          content: `${product.value?._original?.masterData?.current?.metaDescription || ''} | Vue Storefront Demo`
+          content: `${product.value?._original?.masterData?.current?.metaDescription || ''} | Hammer Menswear`
         },
         {
           hid: 'og:image',
@@ -480,7 +480,7 @@ export default defineComponent({
           value: 'Germany'
         }
       ],
-      description: 'Find stunning women\'s cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses from all your favorite brands.',
+      description: 'Hammer Menswear is all about feeling fashionable in your clothing and comfortable in your own skin.',
       detailsIsActive: false,
       brand:
         'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',

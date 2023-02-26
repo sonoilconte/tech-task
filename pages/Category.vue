@@ -268,12 +268,12 @@ export default defineComponent({
       return category?.label || items[0].label;
     });
     const metaTags = computed(() => ({
-      title: `${result.value.data?.currentCategory?.name || ''} | Vue Storefront Demo`,
+      title: `${result.value.data?.currentCategory?.name || ''} | Hammer Menswear`,
       meta: [
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `${result.value.data?.currentCategory?.name || ''} | Vue Storefront Demo`
+          content: `${result.value.data?.currentCategory?.name || ''} | Hammer Menswear`
         },
         {
           hid: 'description',

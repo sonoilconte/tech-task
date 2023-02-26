@@ -253,7 +253,8 @@ export default {
     scss: [
       require.resolve('@storefront-ui/shared/styles/_helpers.scss', {
         paths: [process.cwd()]
-      })
+      }),
+      '~/assets/customization.scss'
     ]
   },
   build: {

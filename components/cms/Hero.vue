@@ -40,7 +40,15 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-.sf-hero-item__wrapper {
-  z-index: 2;
-}
+    
+    .sf-hero-item__wrapper {
+        z-index: 2;
+    }
+    .sf-hero {
+        margin-top: 30px;
+    }
+    .sf-hero-item__subtitle, .sf-hero-item__title {
+        color: #ffffff;
+    }
+
 </style>

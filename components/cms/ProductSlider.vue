@@ -105,3 +105,12 @@ export default Vue.extend({
   },
 })
 </script>
+
+
+<style lang="scss">
+   
+    .sf-carousel {
+        margin-top: 15px;
+    }
+    
+</style>

@@ -28,7 +28,7 @@ export default {
   'Add to compare': 'Add to compare',
   'Match it with': 'Match it with',
   'Share your look': 'Share your look',
-  'Product description': `The Karissa V-Neck Tee features a semi-fitted shape that's flattering for every figure. You can hit the gym with confidence while it hugs curves and hides common "problem" areas. Find stunning women's cocktail dresses and party dresses.`,
+  'Product description': 'A five-pocket straight-leg jean will always serve you well, especially when it is made from supremely comfortable denim like this one here. The pair comes to you in a medium wash that is faded in all the right places, so it looks broken in without any effort.',
   Brand: 'Brand',
   Instruction1: 'Take care of me',
   Instruction2: 'Just here for the care instructions?',
