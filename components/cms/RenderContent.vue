@@ -36,8 +36,8 @@ export default Vue.extend({
   },
   components: {
     Hero, 
-    Heading,
     ProductSlider,
+    Heading,
     Banner,
     CallToAction,
     StyleGuide,

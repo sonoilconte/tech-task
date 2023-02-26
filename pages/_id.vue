@@ -1,5 +1,5 @@
 <template>
-  <render-content :content="en" />
+  <render-content :content="enContent" />
 </template>
 
 <script>
@@ -10,40 +10,41 @@ import { computed, onMounted } from '@vue/composition-api';
 import { useContent, storyblokBridge } from '@vue-storefront/storyblok';
 import RenderContent from '~/components/cms/RenderContent.vue';
 
-// export default Vue.extend({
-//     name: 'CMSDynamicPage',
-//     components: {
-//         RenderContent,
-//     },
-//     setup() {
-//         const { search, content, loading, error } = useContent('enContent');
-
-//         const story = computed(() => content.value);
-//         const enContent = story.body
-
-//         onSSR(async() => {
-//             await search({ url: 'home-page' });
-//         });
-
-//         onMounted(() => {
-//             storyblokBridge(story.value);
-//         })
-
-//         console.log({ content })
-//         return {
-//             content: enContent, 
-//             loading,
-//             error,
-//         };
-//     }
-// }); 
-
-
 export default Vue.extend({
-  name: 'CMSDynamicPage',
-  components: {
-    RenderContent,
-  },
+    name: 'CMSDynamicPage',
+    components: {
+        RenderContent,
+    },
+    setup() {
+        const { search, content, loading, error } = useContent('enContent');
+
+        const story = computed(() => content.value);
+        const enContent = story.value.body
+
+        onSSR(async() => {
+            await search({ url: 'home-page', cache: false });
+        });
+
+        onMounted(() => {
+            storyblokBridge(story.value);
+        })
+
+        console.log({ enContent })
+        
+        return {
+            enContent, 
+            loading,
+            error,
+        };
+    }
+}); 
+
+
+// export default Vue.extend({
+//   name: 'CMSDynamicPage',
+//   components: {
+//     RenderContent,
+//   },
 //   head() {
 //     return {
 //       title: 'Hammer Menswear',
@@ -58,40 +59,40 @@ export default Vue.extend({
 //       locale, 
 //     }
 //   },
-  setup() {
+//   setup() {
     
-    // For English content
-    let { search, content } = useContent('enContent');
-    let story = computed(() => content.value);
-    const enBody = story.value.body;
+//     // For English content
+//     let { search, content } = useContent('enContent');
+//     let story = computed(() => content.value);
+//     const enBody = story.value.body;
     
-    // For Spanish content
-    // const useEsContent = useContent('esContent');
-    // const esSearch = useEsContent.search;
-    // const esContent = useEsContent.content;
-    // const esStory = computed(() => esContent.value); 
-    // const esBody = esStory.value.body;
+//     // For Spanish content
+//     // const useEsContent = useContent('esContent');
+//     // const esSearch = useEsContent.search;
+//     // const esContent = useEsContent.content;
+//     // const esStory = computed(() => esContent.value); 
+//     // const esBody = esStory.value.body;
 
-    onSSR(async () => {
-      await search({ url: 'home-page', locale: '', cache: false });
-    //   await esSearch({ url: 'homepage', locale: 'es', cache: false });
-    });
+//     onSSR(async () => {
+//       await search({ url: 'home-page', locale: '', cache: false });
+//     //   await esSearch({ url: 'homepage', locale: 'es', cache: false });
+//     });
 
-    // onMounted(async () => {
-    //   storyblokBridge(story.value)
-    // });
+//     // onMounted(async () => {
+//     //   storyblokBridge(story.value)
+//     // });
 
-    console.log({ 
-      enBody,
-    //   esBody, 
-    });
+//     console.log({ 
+//       enBody,
+//     //   esBody, 
+//     });
 
-    return {
-      en: enBody,
-    //   es: esBody,
-    };
-  }
-});
+//     return {
+//       en: enBody,
+//     //   es: esBody,
+//     };
+//   }
+// });
 
 
 
