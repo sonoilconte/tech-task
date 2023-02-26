@@ -48,15 +48,15 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push(
         {
-            name: 'home-page',
+            name: 'home',
             path: '/',
             component: resolve(__dirname, 'pages/_id.vue')
         },
-        // {
-        //   name: 'home',
-        //   path: '/',
-        //   component: resolve(__dirname, 'pages/Home.vue')
-        // },
+        {
+          name: 'home-page',
+          path: '/home-page',
+          component: resolve(__dirname, 'pages/_id.vue')
+        },
         {
           name: 'product',
           path: '/p/:slug/:sku/',

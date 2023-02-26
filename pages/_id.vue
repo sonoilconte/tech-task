@@ -1,5 +1,6 @@
 <template>
-  <render-content :content="enContent" />
+  <render-content v-if="locale === 'es-es'" :content="esStoryBody" />
+  <render-content v-else :content="enStoryBody" />
 </template>
 
 <script>
@@ -15,26 +16,41 @@ export default Vue.extend({
     components: {
         RenderContent,
     },
+    data() {
+        let locale = 'en-us';
+        if (process.client) {
+            locale = window.location.pathname.replace('/', '').toLowerCase();
+        }
+        console.log({ locale });
+        return {
+            locale,
+        }
+    },
     setup() {
-        const { search, content, loading, error } = useContent('enContent');
-
+        const { search, content } = useContent('enContent');
         const story = computed(() => content.value);
-        const enContent = story.value.body
+        const enStoryBody = story.value.body
+
+        const esContentResult = useContent('esContent');
+        const esContent = esContentResult.content;
+        const esSearch = esContentResult.search;
+        const esStory = computed(() => esContent.value);
+        const esStoryBody = esStory.value.body;
 
         onSSR(async() => {
-            await search({ url: 'home-page', cache: false });
+            await search({ url: 'home-page', cache: false, locale: 'default' });
+            await esSearch({ url: 'home-page', cache: false, locale: 'es-es' })
         });
 
         onMounted(() => {
             storyblokBridge(story.value);
         })
 
-        console.log({ enContent })
+        console.log({ enStoryBody, esStoryBody })
         
         return {
-            enContent, 
-            loading,
-            error,
+            enStoryBody,
+            esStoryBody 
         };
     }
 }); 
