@@ -48,6 +48,11 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push(
         {
+            name: 'foo',
+            path: '/foo',
+            component: resolve(__dirname, 'pages/_id.vue')
+        },
+        {
           name: 'home',
           path: '/',
           component: resolve(__dirname, 'pages/Home.vue')
@@ -197,8 +202,8 @@ export default {
       '@vue-storefront/nuxt',
       {
         useRawSource: {
-          dev: ['@vue-storefront/core', '@vsf-enterprise/commercetools'],
-          prod: ['@vue-storefront/core', '@vsf-enterprise/commercetools']
+          dev: ['@vue-storefront/core', '@vsf-enterprise/commercetools', '@vue-storefront/storyblok'],
+          prod: ['@vue-storefront/core', '@vsf-enterprise/commercetools', '@vue-storefront/storyblok']
         }
       }]
   ],
@@ -213,6 +218,9 @@ export default {
         ]
       ]
       : []),
+    ['@vue-storefront/storyblok/nuxt', {
+        jsBridge: 'https://app.storyblok.com/f/storyblok-v2-latest.js'
+    }],
     '@nuxtjs/i18n',
     'cookie-universal-nuxt',
     '@nuxt/image',
