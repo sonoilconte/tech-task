@@ -109,4 +109,5 @@ Having said that, it is not mandatory to provide 100% coverage in the translatio
 - [] Customised the look & feel
 - [] Added Storyblok content localisation
 
+
 **Good luck!**
